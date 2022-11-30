@@ -10,6 +10,8 @@
   --color-contacts-footer: rgba(255, 255, 255, 0.6);
   --border-color-in-portfolio: #eeeeee;
   --border-color-page-header: #ececec;
+  --soc-icon-fill-in-team-section: #afb1b8;
+  --footer-soc-bg-color: rgba(255, 255, 255, 0.1);
 }
 
 /* -------------Universal------------- */
@@ -119,6 +121,8 @@ p {
 }
 .contact-list-item {
   color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .nav-list-item:hover,
@@ -132,13 +136,31 @@ p {
   color: var(--accent-color);
 }
 
+.icon-header-contact {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /* -------------Hero------------- */
 
 .hero {
   background-color: var(--bgc-footer-and-hero);
   text-align: center;
+  max-width: 1600px;
+  max-height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-text {
@@ -187,6 +209,17 @@ p {
   overflow: hidden;
 }
 
+.icon-features {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px;
+}
+
+.icon-features-cont {
+  background-color: var(--bgc-section-team);
+  margin-bottom: 30px;
+}
 .feature-title {
   font-weight: 700;
   line-height: 1.14;
@@ -244,7 +277,7 @@ p {
   background-color: var(--bgc-section-team);
 }
 
-.team .list {
+.team-member-list {
   display: flex;
 }
 
@@ -277,7 +310,72 @@ p {
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
+}
+
+.member-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
+}
+
+.member-soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.member-soc-icon {
+  fill: var(--soc-icon-fill-in-team-section);
+}
+
+.member-soc-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.member-soc-link:hover .member-soc-icon,
+.member-soc-link:focus .member-soc-icon {
+  fill: var(--simple-white-color);
+}
+
+.member-soc-link:hover,
+.member-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+/* -------------Clients------------- */
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--soc-icon-fill-in-team-section);
+  border-radius: 4px;
+}
+
+.icon-clients {
+  fill: var(--soc-icon-fill-in-team-section);
+}
+
+.clients-link:hover .icon-clients,
+.clients-link:focus .icon-clients {
+  fill: var(--accent-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
 }
 
 /* -------------Footer------------- */
@@ -316,6 +414,47 @@ p {
 
 .page-footer .list li:not(:last-child) {
   margin-bottom: 12px;
+}
+
+.footer-social-medias .feature-title {
+  color: var(--simple-white-color);
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address {
+  margin-right: 70px;
+}
+
+.footer-soc-list {
+  display: flex;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--footer-soc-bg-color);
+}
+
+.footer-soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-soc-icon {
+  fill: var(--simple-white-color);
+}
+
+.footer-soc-link:hover,
+.member-soc-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* -------------Portfolio------------- */
@@ -362,6 +501,12 @@ p {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item:nth-child(3n) {
