@@ -521,7 +521,8 @@ p {
 
 .footer-form-input {
   height: 48px;
-  width: 354px;
+  min-width: 350px;
+  max-width: 354px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
