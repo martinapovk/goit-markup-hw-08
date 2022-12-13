@@ -555,6 +555,13 @@ p {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-submit-btn:hover,
+.footer-submit-btn:focus {
+  background-color: var(--bgc-hero-btn-hover);
 }
 
 .icon-footer-btn {
@@ -705,7 +712,8 @@ p {
 
 .checkbox-input-wrapper {
   margin-bottom: 30px;
-  margin-left: 12px;
+  display: flex;
+  justify-content: center;
 }
 
 .check-label {
@@ -756,6 +764,7 @@ p {
   margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .modal-submit-btn:hover,
