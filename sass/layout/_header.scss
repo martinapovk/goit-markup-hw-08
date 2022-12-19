@@ -1,13 +1,13 @@
-.page-header {
+.header {
   border-bottom: 1px solid var(--border-color-page-header);
 }
 
-.main-nav {
+.header__content {
   display: flex;
   align-items: center;
 }
 
-.nav-pages-list {
+.navigation__list {
   display: flex;
 }
 
@@ -16,11 +16,11 @@
   margin-left: auto;
 }
 
-.page-header .logo {
+.header .logo {
   margin-right: 93px;
 }
 
-.nav-pages-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -28,7 +28,7 @@
   margin-right: 40px;
 }
 
-.nav-list-item,
+.navigation__link,
 .contact-list-item {
   display: block;
   font-weight: 500;
@@ -49,7 +49,7 @@
 }
 
 
-.nav-list-item.current {
+.navigation__link.current {
   color: var(--accent-color);
   position: relative;
   &::after {
