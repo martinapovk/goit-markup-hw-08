@@ -15,18 +15,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="container main-nav">
         <a href="./index.html" class="link logo">
-          <span class="accent">Web</span>Studio
+          <span class="logo-accent">Web</span>Studio
         </a>
         <nav>
           <ul class="list nav-pages-list">
             <li class="nav-pages-item">
-              <a href="./index.html" class="link nav-list-item">Студія</a>
+              <a href="./index.html" class="link nav-list-item "
+                >Студія</a
+              >
             </li>
             <li class="nav-pages-item">
               <a href="./portfolio.html" class="link nav-list-item current"
@@ -65,21 +68,21 @@
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="list filter-btn-list">
             <li class="filter-btn-item">
-              <button type="button" class="btn filter-btn current-filter">
+              <button type="button" class="filter-btn current-filter">
                 Усі
               </button>
             </li>
             <li class="filter-btn-item">
-              <button type="button" class="btn filter-btn">Веб-сайти</button>
+              <button type="button" class="filter-btn">Веб-сайти</button>
             </li>
             <li class="filter-btn-item">
-              <button type="button" class="btn filter-btn">Додатки</button>
+              <button type="button" class="filter-btn">Додатки</button>
             </li>
             <li class="filter-btn-item">
-              <button type="button" class="btn filter-btn">Дизайн</button>
+              <button type="button" class="filter-btn">Дизайн</button>
             </li>
             <li class="filter-btn-item">
-              <button type="button" class="btn filter-btn">Маркетинг</button>
+              <button type="button" class="filter-btn">Маркетинг</button>
             </li>
           </ul>
 
@@ -245,8 +248,8 @@
     <footer class="page-footer">
       <div class="container footer-container">
         <div class="footer-address">
-          <a href="./index.html" class="logo link"
-            ><span class="accent">Web</span>Studio</a
+          <a href="./index.html" class="logo logo-inverse link"
+            ><span class="logo-accent">Web</span>Studio</a
           >
           <address>
             <ul class="list footer-address-list">
@@ -317,8 +320,9 @@
               class="footer-form-input"
               type="email"
               placeholder="E-mail"
+              name="mail"
             />
-            <button class="footer-submit-btn" type="submit">
+            <button class="footer-submit-btn btn" type="submit">
               Підписатися
               <svg class="icon-footer-btn" width="24" height="24">
                 <use href="./images/icons-not-min.svg#icon-send"></use>

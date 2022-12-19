@@ -1,0 +1,33 @@
+.icon-features {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px;
+}
+
+.icon-features-cont {
+  background-color: var(--bgc-section-team);
+  margin-bottom: 30px;
+}
+.feature-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.features .list {
+  display: flex;
+}
+.features .list-item {
+  width: calc((100% - 90px) / 4);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.feature-description {
+  line-height: 1.41;
+  color: var(--secondary-text-color);
+}
