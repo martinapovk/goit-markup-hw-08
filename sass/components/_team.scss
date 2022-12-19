@@ -2,11 +2,11 @@
   background-color: var(--bgc-section-team);
 }
 
-.team-member-list {
+.team__member-list {
   display: flex;
 }
 
-.team-member {
+.team__member {
   background-color: var(--simple-white-color);
   width: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -18,11 +18,11 @@
   }
 }
 
-.team-member-photo {
+.member__photo {
   margin-bottom: 30px;
 }
 
-.team-member-name {
+.member__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -30,7 +30,7 @@
   margin-bottom: 10px;
 }
 
-.member-position {
+.member__position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -38,33 +38,29 @@
   margin-bottom: 16px;
 }
 
-.member-soc-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.member__soc-list {
+  @extend %centered-flex;
   margin-bottom: 30px;
 }
 
-.member-soc-item:not(:last-child) {
+.member__soc-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.member-soc-icon {
+.member__soc-icon {
   fill: var(--soc-icon-fill-in-team-section);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .member-soc-link:hover &,
-  .member-soc-link:focus & {
+  .member__soc-link:hover &,
+  .member__soc-link:focus & {
     fill: var(--simple-white-color);
   }
 }
 
-.member-soc-link {
+.member__soc-link {
   width: 44px;
   height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %centered-flex;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

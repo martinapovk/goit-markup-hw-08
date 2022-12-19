@@ -1,16 +1,16 @@
-.section.no-top-padding {
+.section--work {
   padding-top: 0;
 }
 
-.work .list {
+.work__list {
   display: flex;
 }
 
-.work-img {
+.work__img {
   display: block;
 }
 
-.work-item {
+.work__item {
   width: calc((100% - 60px) / 3);
   position: relative;
 
@@ -19,7 +19,7 @@
   }
 }
 
-.work-description {
+.work__description {
   font-weight: 700;
   line-height: 1.14;
   text-align: center;

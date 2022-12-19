@@ -1,15 +1,15 @@
-.page-footer {
+.footer {
   background-color: var(--bgc-footer-and-hero);
   padding: 60px 0;
 }
 
-.page-footer .logo {
+.logo--footer {
   margin-bottom: 28px;
 }
 
-.company-address,
-.company-mail,
-.company-tel {
+.info-block__address,
+.info-block__mail,
+.info-block__tel {
   line-height: 1.71;
   font-style: normal;
   color: var(--color-contacts-footer);
@@ -20,23 +20,23 @@
   }
 }
 
-.footer-address-list {
+.info-block__list {
   width: 231px;
 }
 
-.company-address {
+.info-block__address {
   color: var(--simple-white-color);
 }
 
-.page-footer .list li:not(:last-child) {
+.footer .list li:not(:last-child) {
   margin-bottom: 12px;
 }
 
-.footer-social-medias {
+.footer__social-block {
   margin-right: 93px;
 }
 
-.footer-social-medias-title {
+.social-block__title {
   color: var(--simple-white-color);
   margin-bottom: 20px;
   font-weight: 700;
@@ -50,21 +50,18 @@
   align-items: baseline;
 }
 
-.footer-address {
+.footer__info-block {
   margin-right: 70px;
 }
 
-.footer-soc-list {
+.social-block__list {
   display: flex;
 }
 
-.footer-soc-link {
+.social-block__link {
   width: 44px;
   height: 44px;
   @extend %centered-flex;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
 
   border-radius: 50%;
   background-color: var(--footer-soc-bg-color);
@@ -75,19 +72,19 @@
   }
 }
 
-.footer-form {
+.subscribe-block__form {
   display: flex;
 }
 
-.footer-soc-item:not(:last-child) {
+.social-block__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-soc-icon {
+.social-block__icon {
   fill: var(--simple-white-color);
 }
 
-.footer-form-title {
+.subscribe-block__title {
   color: var(--simple-white-color);
   font-weight: 700;
   line-height: 1.14;
@@ -96,10 +93,9 @@
   margin-bottom: 20px;
 }
 
-.footer-form-input {
-  height: 48px;
-  min-width: 350px;
-  max-width: 354px;
+.subscribe-block__input {
+  height: 50px;
+  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
@@ -116,13 +112,12 @@
   }
 }
 
-.footer-submit-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.subscribe-block__submit-btn {
+  @extend %centered-flex;
+  @extend %btn;
 }
 
-.icon-footer-btn {
+.subscribe-block__icon {
   margin-left: 10px;
   fill: var(--simple-white-color);
 }

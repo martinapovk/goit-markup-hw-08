@@ -1,15 +1,14 @@
-.icon-features {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 120px;
+.section__title--features {
+  @extend %visually-hidden;
 }
 
-.icon-features-cont {
+.advantage__icon-wrapper {
+  @extend %centered-flex;
   background-color: var(--bgc-section-team);
   margin-bottom: 30px;
+  height: 120px;
 }
-.feature-title {
+.advantage__title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -17,17 +16,17 @@
   font-size: 14px;
 }
 
-.features .list {
+.features__list {
   display: flex;
 }
-.features .list-item {
+.features__item {
   width: calc((100% - 90px) / 4);
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.feature-description {
+.advantage__description {
   line-height: 1.41;
   color: var(--secondary-text-color);
 }

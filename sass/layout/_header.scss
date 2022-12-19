@@ -11,12 +11,12 @@
   display: flex;
 }
 
-.header-contact-list {
+.contact {
   display: flex;
   margin-left: auto;
 }
 
-.header .logo {
+.logo--header {
   margin-right: 93px;
 }
 
@@ -24,12 +24,12 @@
   margin-right: 50px;
 }
 
-.header-contact-item:not(:last-child) {
+.contact__item:not(:last-child) {
   margin-right: 40px;
 }
 
 .navigation__link,
-.contact-list-item {
+.contact__link {
   display: block;
   font-weight: 500;
   line-height: 1.14;
@@ -42,14 +42,13 @@
   }
 }
 
-.contact-list-item {
+.contact__link {
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
 }
 
-
-.navigation__link.current {
+.navigation__link--current {
   color: var(--accent-color);
   position: relative;
   &::after {
@@ -65,7 +64,7 @@
   }
 }
 
-.icon-header-contact {
+.contact__icon {
   fill: currentColor;
   margin-right: 10px;
 }
