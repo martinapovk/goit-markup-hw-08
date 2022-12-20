@@ -1,3 +1,7 @@
+.portfolio__title {
+  @extend %visually-hidden;
+}
+
 .filter-btn {
   font-family: inherit;
   cursor: pointer;

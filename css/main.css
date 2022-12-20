@@ -1,20 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-ol,
-ul {
-  margin: 0;
-  padding-left: 0;
-}
-
 :root {
   --accent-color: #2196f3;
   --bgc-hero-btn-hover: #188ce8;
@@ -32,6 +15,23 @@ ul {
   --bg-color-pirtfolio-item-hover: rgba(33, 150, 243, 0.9);
   --color-contacts-footer: rgba(255, 255, 255, 0.6);
   --backdrop-color-modal: rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding-left: 0;
 }
 
 body {
@@ -61,7 +61,7 @@ body {
   justify-content: center;
 }
 
-.checkbox__input, .section__title--features {
+.checkbox__input, .portfolio__title, .section__title--features {
   position: absolute;
   width: 1px;
   height: 1px;
