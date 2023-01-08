@@ -357,8 +357,16 @@ img {
   color: var(--accent-color);
 }
 
-.navigation__list_mob {
-  margin-bottom: 306px;
+@media screen and (max-width: 480px) {
+  .contact__link_mob {
+    font-size: 25px;
+  }
+}
+
+.mob_contact {
+  position: absolute;
+  left: 40px;
+  bottom: 134px;
 }
 
 .mob-menu__social {
@@ -376,6 +384,11 @@ img {
   color: var(--accent-color);
   font-size: 18px;
 }
+@media screen and (max-width: 480px) {
+  .mob-menu__social-item {
+    font-size: 13px;
+  }
+}
 
 .contact__item_mob {
   margin-bottom: 32px;
@@ -384,6 +397,11 @@ img {
 
 .mob-menu__social-item:not(:last-child) {
   margin-right: 20px;
+}
+@media screen and (max-width: 480px) {
+  .mob-menu__social-item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1186,6 +1204,16 @@ img {
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .checkbox__label {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .checkbox__label {
+    font-size: 12px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__label::before {

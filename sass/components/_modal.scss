@@ -163,6 +163,12 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  @media screen and (max-width: 479px) {
+    font-size: 8px;
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
 }
 
 .checkbox__input {

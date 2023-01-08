@@ -185,8 +185,19 @@
   }
 }
 
+.contact__link_mob {
+  @media screen and (max-width: 480px) {
+    font-size: 25px;
+  }
+}
+
 .navigation__list_mob {
-  margin-bottom: 306px;
+  // margin-bottom: 306px;
+}
+.mob_contact {
+  position: absolute;
+  left: 40px;
+  bottom: 134px;
 }
 
 .mob-menu__social {
@@ -194,6 +205,8 @@
   position: absolute;
   bottom: 48px;
   left: 40px;
+
+  // flex-wrap: wrap;
 }
 
 .navigation__item_mob:not(:last-child) {
@@ -203,6 +216,9 @@
 .mob-menu__social-item {
   color: var(--accent-color);
   font-size: 18px;
+  @media screen and (max-width: 480px) {
+    font-size: 13px;
+  }
 }
 
 .contact__item_mob {
@@ -212,6 +228,9 @@
 
 .mob-menu__social-item:not(:last-child) {
   margin-right: 20px;
+  @media screen and (max-width: 480px) {
+    margin-right: 10px;
+  }
 }
 
 .open_mob_menu,
