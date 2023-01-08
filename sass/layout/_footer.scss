@@ -20,8 +20,17 @@
   }
 }
 
+.footer__social-block {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
 .info-block__list {
   width: 231px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .info-block__address {
@@ -33,7 +42,10 @@
 }
 
 .footer__social-block {
-  margin-right: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+  margin-bottom: 60px;
 }
 
 .social-block__title {
@@ -46,16 +58,36 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__info-block {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    margin-left: 76px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+    margin-left: 0;
+    text-align: left;
+  }
 }
 
 .social-block__list {
   display: flex;
+  justify-content: center;
 }
 
 .social-block__link {
@@ -73,7 +105,9 @@
 }
 
 .subscribe-block__form {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .social-block__item:not(:last-child) {
@@ -95,12 +129,13 @@
 
 .subscribe-block__input {
   height: 50px;
-  width: 358px;
+  margin-bottom: 20px;
+
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
   padding: 0 16px;
-  margin-right: 12px;
   color: var(--simple-white-color);
   font-size: 16px;
   line-height: 1.25;
@@ -110,14 +145,38 @@
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.footer__subscribe-block {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subscribe-block__submit-btn {
   @extend %centered-flex;
   @extend %btn;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .subscribe-block__icon {
   margin-left: 10px;
   fill: var(--simple-white-color);
+}
+
+@media screen and (min-width: 768px) {
 }
